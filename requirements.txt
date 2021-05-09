@@ -13,7 +13,6 @@ brotlipy==0.7.0
 cachelib==0.1.1
 cachetools==4.2.1
 certifi==2020.12.5
-clyent==1.2.2
 comtypes==1.1.8
 conda==4.9.2
 conda-build==3.21.4
