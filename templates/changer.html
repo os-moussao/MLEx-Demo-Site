@@ -1,0 +1,33 @@
+{% extends "layout.html" %} {% block title %} Register {% endblock %} {% block
+main %}
+<form action="/changer" method="post">
+    <div class="form-group">
+        <select class="form-control" name="code">
+            <option disabled selected value="">Code</option>
+            {% for row in index %}
+            <option value="{{row['code']}}">{{row["code"]}}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="form-group">
+        <select class="form-control" name="etat">
+            <option disabled selected value="">Etat</option>
+            <option value="Non Payé">Non Payé</option>
+            <option value="Payé">Payé</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <select class="form-control" name="status">
+            <option disabled selected value="">Status</option>
+            <option value="Nouveau Colis">Nouveau Colis</option>
+            <option value="Attente De Ramassage">Attente De Ramassage</option>
+            <option value="Ramassé">Ramassé</option>
+            <option value="Expédié">Expédié</option>
+            <option value="Reçu">Reçu</option>
+            <option value="Mise en distribution">Mise en distribution</option>
+            <option value="Livré">Livré</option>
+        </select>
+    </div>
+    <button class="btn btn-primary" type="submit">Changer</button>
+</form>
+{% endblock %}

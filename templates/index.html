@@ -1,0 +1,29 @@
+{% extends "layout.html" %} {% block title %} Table {% endblock %} {% block main
+%}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Code d'envoi</th>
+            <th>Ajoutée le</th>
+            <th>Téléphone</th>
+            <th>Nom du magasin</th>
+            <th>Etat</th>
+            <th>Ville</th>
+            <th>Prix</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in index %}
+        <tr>
+            <td><b>{{row["code"]}}</b></td>
+            <td>{{row["datetime"]}}</td>
+            <td>{{row["costumer_phone"]}}</td>
+            <td>{{row["store_name"]}}</td>
+            <td class="yellow">{{row["etat"]}}</td>
+            <td class="green">{{row["status"]}}</td>
+            <td>{{row["price"]}} DH</td>
+        </tr>
+        {% endfor%}
+    </tbody>
+</table>
+{% endblock %}

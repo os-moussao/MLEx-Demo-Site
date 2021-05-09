@@ -1,0 +1,26 @@
+{% extends "layout.html" %} {% block title %} Apology {% endblock %} {% block
+main %}
+
+<style>
+    .ap_container {
+        padding: 20px 30px;
+        background: #ddd;
+        border-radius: 5px;
+        max-width: 500px;
+        margin: 60px auto;
+    }
+
+    .code {
+        color: #f5b82e;
+    }
+
+    .error {
+        color: #ea433b;
+    }
+</style>
+
+<div class="ap_container">
+    <h1 class="code">{{code}}</h1>
+    <h2 class="error">{{error}}</h2>
+</div>
+{% endblock %}
