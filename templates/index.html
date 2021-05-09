@@ -8,6 +8,7 @@
             <th>Téléphone</th>
             <th>Nom du magasin</th>
             <th>Etat</th>
+            <th>Status</th>
             <th>Ville</th>
             <th>Prix</th>
         </tr>
@@ -21,6 +22,7 @@
             <td>{{row["store_name"]}}</td>
             <td class="yellow">{{row["etat"]}}</td>
             <td class="green">{{row["status"]}}</td>
+            <td class="green">{{row["city"]}}</td>
             <td>{{row["price"]}} DH</td>
         </tr>
         {% endfor%}
