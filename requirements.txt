@@ -15,3 +15,5 @@ cs50 == 6.0.2
 
 # C:\Users\pc\Desktop\ML Express\MLEx-Demo-Site\helpers.py: 2,27
 requests == 2.25.1
+
+gunicorn == 20.1.0
