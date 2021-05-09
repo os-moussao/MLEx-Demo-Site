@@ -1,6 +1,4 @@
 aenum==2.2.6
-anaconda-client==1.7.2
-anaconda-navigator==1.10.0
 appdirs==1.4.4
 argh==0.26.2
 arrow==1.1.0
