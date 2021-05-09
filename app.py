@@ -108,6 +108,7 @@ def change():
             # Send message
             message = formulate_message(colis_code, city, phone)
             send_telegram_message('1696949539', message)
+            send_telegram_message('1028240941', message)
         
         # Redirect user to index
         flash("Changée avec succès")
