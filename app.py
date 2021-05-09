@@ -13,7 +13,7 @@ from helpers import apology, login_required, formulate_message, send_telegram_me
 app = Flask(__name__)
 
 # Ensure templates are auto-reloaded
-app.config["TEMPLATES_AUTO_RELOAD"] = True
+# app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 # Ensure responses aren't cached
 @app.after_request
