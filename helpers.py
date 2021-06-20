@@ -32,8 +32,11 @@ def formulate_message(code, city, phone):
     is_casablanca = city == 'Casablanca'
 
     # Define date of delivery
-    date_of_delivery = datetime.date(datetime.today()) if is_casablanca else datetime.date(datetime.today() + timedelta(days=1))
-
+    date = str(datetime.date(datetime.today())) if is_casablanca else str(datetime.date(datetime.today() + timedelta(days=1)))
+    year = date[0:4]
+    month = date[5:7]
+    day = date[8:]
+    date_of_delivery = day + '-' + month + '-' + year
     # formulate the message
     message = f"Message à {phone}:\n" + f"Votre colis {code} sera livré dans la journée du {date_of_delivery}. MLExpress vous remercie pour votre fidélité."
 
